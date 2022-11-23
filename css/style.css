@@ -1,0 +1,568 @@
+.leasing-item-taxi_main {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.leasing-item-taxi_main__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.leasing-item-taxi_main__content {
+  position: relative;
+  z-index: 5;
+}
+
+.leasing-item-taxi_main__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #05326e;
+  margin-bottom: 50px;
+  max-width: 650px;
+}
+
+.leasing-item-taxi_main__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #009fdf;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  text-align: center;
+  padding: 13px 73px;
+  text-decoration: none;
+  border: 1px solid #009fdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leasing-item-taxi_main__button:hover {
+  background: #fff;
+  color: #009fdf;
+}
+
+.leasing-item-taxi_main__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.leasing-item-taxi_main__media {
+  height: 100%;
+}
+
+.leasing-item-taxi_main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.leasing-item-taxi_main__item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.leasing-item-taxi_main__icon {
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.leasing-item-taxi_main__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #05326e;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.leasing-item-taxi_main__value {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #05326e;
+  text-align: left;
+}
+
+.leasing-item-taxi_advantages {
+  padding: 55px 0;
+}
+
+.leasing-item-taxi_advantages__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #05326e;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}
+
+.leasing-item-taxi_advantages__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.leasing-item-taxi_advantages__item {
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.leasing-item-taxi_advantages__img {
+  margin-bottom: 20px;
+}
+
+.leasing-item-taxi_advantages__block {
+  background: #e6f3fb;
+  border-radius: 20px;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+}
+
+.leasing-item-taxi_advantages__name {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #0D78BE;
+  margin-bottom: 10px;
+}
+
+.leasing-item-taxi_advantages__value {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.common_profit {
+  padding-top: 25px;
+  padding-bottom: 60px;
+  background: #fff;
+}
+
+.common_profit__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #05326e;
+  margin-bottom: 25px;
+}
+
+.common_profit__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  row-gap: 30px;
+}
+
+.common_profit__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 10px;
+}
+
+.common_profit__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 30px 30px 45px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6f3fb), to(rgba(230, 243, 251, 0)));
+  background: -o-linear-gradient(top, #e6f3fb 0%, rgba(230, 243, 251, 0) 100%);
+  background: linear-gradient(180deg, #e6f3fb 0%, rgba(230, 243, 251, 0) 100%);
+  border-radius: 37px;
+  height: 100%;
+  position: relative;
+}
+
+.common_profit__content {
+  height: 100%;
+}
+
+.common_profit__sub-title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #009fdf;
+  margin-bottom: 20px;
+}
+
+.common_profit__text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 340px;
+}
+
+.common_profit__text a {
+  color: #009fdf;
+  font-family: "Montserrat";
+}
+
+@media (max-width: 1440px) {
+  .leasing-item-taxi_main__title {
+    font-size: 38px;
+  }
+
+  .leasing-item-taxi_main {
+	  padding-top: 100px;
+	  padding-bottom: 80px;
+  }
+
+  .leasing-item-taxi_main__name {
+	  margin-bottom: 5px;
+  }
+
+  .leasing-item-taxi_main__img {
+    max-width: 600px;
+  }
+  .leasing-item-taxi_main__row {
+	  margin-bottom: 70px;
+  }
+
+  .leasing-item-taxi_main__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .leasing-item-taxi_advantages__title {
+    font-size: 47px;
+    line-height: 55px;
+  }
+
+  .leasing-item-taxi_advantages__block {
+    padding: 25px 10px;
+  }
+
+  .leasing-item-taxi_advantages__name {
+    font-size: 28px;
+  }
+
+  .common_profit__sub-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leasing-item-taxi_main__img {
+    max-width: 550px;
+  }
+
+  .leasing-item-taxi_advantages__name {
+	  font-size: 26px;
+  }
+
+  .leasing-item-taxi_advantages__value {
+	  font-size: 18px;
+  }
+
+  .leasing-item-taxi_advantages__body {
+    width: 100%;
+    margin: 0 -10px;
+  }
+
+  .leasing-item-taxi_advantages__item {
+    padding: 0 10px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .leasing-item-taxi_main {
+    padding: 45px 0;
+  }
+
+  .leasing-item-taxi_main__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 320px;
+    margin: 0 auto 25px;
+  }
+
+  .leasing-item-taxi_main__img {
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .leasing-item-taxi_main__media {
+    border-radius: 60%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .leasing-item-taxi_main__scr {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+  }
+
+  .leasing-item-taxi_main__row {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .leasing-item-taxi_main__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .leasing-item-taxi_advantages__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .common_profit__title {
+    font-size: 20px;
+  }
+
+  .common_profit__item {
+    padding: 40px 20px 30px 20px;
+  }
+
+  .common_profit__sub-title {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 70%;
+  }
+
+  .common_profit__img {
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .common_profit__img img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .leasing-item-taxi_main__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .leasing-item-taxi_main__content {
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .leasing-item-taxi_main__title {
+    max-width: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .leasing-item-taxi_main {
+    padding: 20px 0;
+  }
+
+  .leasing-item-taxi_main__scr {
+    padding-bottom: 20px;
+    overflow-x: auto;
+  }
+
+  .leasing-item-taxi_main__row {
+    width: 240%;
+  }
+
+  .leasing-item-taxi_main__item {
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    width: 80%;
+    margin: 0 5px;
+    padding: 30px 10px 40px 10px;
+  }
+
+  .leasing-item-taxi_main__name {
+    font-size: 14px;
+  }
+
+  .leasing-item-taxi_main__value {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .leasing-item-taxi_advantages {
+    padding: 40px 0;
+  }
+
+  .leasing-item-taxi_advantages__row {
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+
+  .leasing-item-taxi_advantages__body {
+    width: 600%;
+    margin: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .leasing-item-taxi_advantages__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0 0px;
+    margin: 0 5px;
+  }
+
+  .leasing-item-taxi_advantages__block {
+    padding: 20px 10px;
+    min-height: 180px;
+  }
+
+  .leasing-item-taxi_advantages__name {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .common_profit {
+    padding: 25px 0;
+  }
+
+  .common_profit__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+  }
+
+  .common_profit__row {
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+
+  .common_profit__body {
+    width: 200%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .common_profit__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 0;
+    margin: 0 5px;
+  }
+
+  .common_profit__sub-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .common_profit__text {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .leasing-item-taxi_main__title {
+    font-size: 15px;
+  }
+
+  .leasing-item-taxi_main__button {
+    padding: 10px 65px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .leasing-item-taxi_advantages__title {
+    font-size: 25px;
+    line-height: 100%;
+    margin-bottom: 35px;
+  }
+}
