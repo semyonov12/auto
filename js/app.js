@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 				id = tabTitle.dataset.tabsId;
 
-				const body = document.querySelectorAll('#' + id);
+				const body = document.querySelectorAll(`[data-number="${id}"]`);
 
 				bodyAll.forEach(element => {
 					element.classList.remove('tabs__body-active');
@@ -41,36 +41,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// показать еще 
 	const moreButtons = document.querySelectorAll('.contest-tabs__more');
 
-	moreButtons.forEach(moreButton => {
-		moreButton.addEventListener("click", function (e) {
-			let moreText = moreButton.closest('.contest-tabs__body').querySelector('.contest-tabs__more-text');
-			this.classList.remove('contest-tabs__more-active');
+	if (moreButtons.length) {
+		moreButtons.forEach(moreButton => {
+			moreButton.addEventListener("click", function (e) {
+				let moreText = moreButton.closest('.contest-tabs__body').querySelector('.contest-tabs__more-text');
+				this.classList.remove('contest-tabs__more-active');
 
-			if (moreText.classList.contains('contest-tabs__more-open')) {
-				let moreTextHeight = getComputedStyle(moreText).height;
-				let animation = moreText.animate([
-					{ height: moreTextHeight },
-					{ height: 0 }
-				], { duration: 300 });
+				if (moreText.classList.contains('contest-tabs__more-open')) {
+					let moreTextHeight = getComputedStyle(moreText).height;
+					let animation = moreText.animate([
+						{ height: moreTextHeight },
+						{ height: 0 }
+					], { duration: 300 });
 
-				animation.addEventListener('finish', function () {
-					moreText.classList.remove('contest-tabs__more-open');
-				});
-			}
-			else {
-				this.classList.add('contest-tabs__more-active');
-				moreText.classList.add('contest-tabs__more-open');
-				let moreTextHeight = getComputedStyle(moreText).height;
-				moreText.animate([
-					{ height: 0 },
-					{ height: moreTextHeight }
-				], { duration: 300 });
-			}
+					animation.addEventListener('finish', function () {
+						moreText.classList.remove('contest-tabs__more-open');
+					});
+				}
+				else {
+					this.classList.add('contest-tabs__more-active');
+					moreText.classList.add('contest-tabs__more-open');
+					let moreTextHeight = getComputedStyle(moreText).height;
+					moreText.animate([
+						{ height: 0 },
+						{ height: moreTextHeight }
+					], { duration: 300 });
+				}
+
+			});
 
 		});
-
-	});
-
+	}
 	// попап
 	let bodyLockStatus = true;
 	let bodyLockToggle = (delay = 500) => {
@@ -816,15 +817,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		const links = document.querySelectorAll('.contest-menu-navigation__link');
 		let threshold = window.innerHeight / 2;
 
-		for (var i = links.length - 1; i >= 0; i--) {
-			let link = links[i];
-			let section = document.querySelector(link.dataset.goto);
-			if (section.getBoundingClientRect().top < threshold) {
-				links.forEach(link => {
-					link.classList.remove('contest-menu-navigation__link-active');
-				});
-				link.classList.add('contest-menu-navigation__link-active');
-				break;
+		if (links.length) {
+			for (var i = links.length - 1; i >= 0; i--) {
+				let link = links[i];
+				let section = document.querySelector(link.dataset.goto);
+				if (section.getBoundingClientRect().top < threshold) {
+					links.forEach(link => {
+						link.classList.remove('contest-menu-navigation__link-active');
+					});
+					link.classList.add('contest-menu-navigation__link-active');
+					break;
+				}
 			}
 		}
 

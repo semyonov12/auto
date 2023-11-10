@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@500&display=swap&_v=20231110122505" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@500&display=swap&_v=20231110124134" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Главная</title>
 	
@@ -78,7 +78,7 @@
 										class="contest-tabs__title">набор подарков</button>
 								</nav>
 								<div class="contest-tabs__content">
-									<div id="contest-tabs-1" class="contest-tabs__body tabs__body-active">
+									<div data-number="contest-tabs-1" class="contest-tabs__body tabs__body-active">
 										<p class="contest-tabs__text">
 											Телескоп Levenhuk Skyline Travel 80 – небольшой и легкий рефрактор с
 											просветленной оптикой. Прост в управлении.
@@ -94,7 +94,7 @@
 										<button type="button"
 											class="contest-tabs__more"><span>Развернуть</span><span>Свернуть</span></button>
 									</div>
-									<div id="contest-tabs-2" class="contest-tabs__body">
+									<div data-number="contest-tabs-2" class="contest-tabs__body">
 										<p class="contest-tabs__text">
 											Яндекс Станция 2 с Алисой. Лаконичный дизайн станции сочетается с широкими
 											возможностями для развлечений и управления другими устройствами. Алиса
@@ -110,7 +110,7 @@
 										<button type="button"
 											class="contest-tabs__more"><span>Развернуть</span><span>Свернуть</span></button>
 									</div>
-									<div id="contest-tabs-3" class="contest-tabs__body">
+									<div data-number="contest-tabs-3" class="contest-tabs__body">
 										<p>
 											Эксклюзивный набор фирменных подарков Газпромбанк Автолозинг: худи, рюкзак,
 											футболка и фирменная кружка.
@@ -120,9 +120,9 @@
 							</div>
 						</div>
 						<div class="contest-main__image">
-							<img data-popup="#description1" class="tabs__body-active" id="contest-tabs-1" src="img/telescope.png" alt="телескоп">
-							<img data-popup="#description2" id="contest-tabs-2" src="img/yandex-station.png" alt="яндекс станция">
-							<img data-popup="#description3" id="contest-tabs-3" src="img/contest-main-3.png" alt="рюкзак">
+							<img data-popup="#description1" class="tabs__body-active" data-number="contest-tabs-1" src="img/telescope.png" alt="телескоп">
+							<img data-popup="#description2" data-number="contest-tabs-2" src="img/yandex-station.png" alt="яндекс станция">
+							<img data-popup="#description3" data-number="contest-tabs-3" src="img/contest-main-3.png" alt="рюкзак">
 						</div>
 					</div>
 				</div>
@@ -271,7 +271,7 @@
 
 
 
-	<script src="js/app.js?_v=20231110122505"></script>
+	<script src="js/app.js?_v=20231110124134"></script>
 </body>
 
 </html>
