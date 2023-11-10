@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@500&display=swap&_v=20231110122505" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Главная</title>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="contest-header">
+			<a href="" class="contest-header__logo">
+				<img src="img/logo.svg" alt="логотип газпромбанк автолизинг">
+			</a>
+		</header>
+		<nav class="contest-navigation">
+			<div class="contest-navigation__social contest-social-navigation">
+				<ul class="contest-social-navigation__list">
+					<li class="contest-social-navigation__item">
+						<a href="" class="contest-social-navigation__link">
+							<img src="img/vk.svg" alt="вконтакте">
+						</a>
+					</li>
+					<li class="contest-social-navigation__item">
+						<a href="" class="contest-social-navigation__link">
+							<img src="img/telegram.svg" alt="телеграм">
+						</a>
+					</li>
+					<li class="contest-social-navigation__item">
+						<a href="" class="contest-social-navigation__link">
+							<img src="img/youtube.svg" alt="ютуб">
+						</a>
+					</li>
+					<li class="contest-social-navigation__item">
+						<a href="" class="contest-social-navigation__link">
+							<img src="img/media.svg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contest-navigation__menu contest-menu-navigation">
+				<ul class="contest-menu-navigation__list">
+					<li class="contest-menu-navigation__item">
+						<a data-goto=".contest-main" data-goto-header href="#" class="contest-menu-navigation__link contest-menu-navigation__link-active">конкурс</a>
+					</li>
+					<li class="contest-menu-navigation__item">
+						<a data-goto=".contest-registration" data-goto-header href="#" class="contest-menu-navigation__link">регистрация</a>
+					</li>
+					<li class="contest-menu-navigation__item">
+						<a data-goto=".contest-faq" data-goto-header href="#" class="contest-menu-navigation__link">Что нужно сделать?</a>
+					</li>
+					<li class="contest-menu-navigation__item">
+						<a data-goto=".contest-results" data-goto-header href="#" class="contest-menu-navigation__link">Подведение итогов</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<section class="contest-main">
+				<div class="contest-main__container">
+					<div data-tabs class="contest-main__body">
+						<div class="contest-main__content">
+							<h1 class="contest-main__title">прояви активность <br>
+								в наших соцсетях</h1>
+							<div class="contest-main__sub-title">И выиграй ценные призы</div>
+							<div class="contest-tabs">
+								<nav class="contest-tabs__navigation">
+									<button type="button" data-tabs-id="contest-tabs-1"
+										class="contest-tabs__title contest-tab-active">телескоп</button>
+									<button type="button" data-tabs-id="contest-tabs-2"
+										class="contest-tabs__title">яндекс станция</button>
+									<button type="button" data-tabs-id="contest-tabs-3"
+										class="contest-tabs__title">набор подарков</button>
+								</nav>
+								<div class="contest-tabs__content">
+									<div id="contest-tabs-1" class="contest-tabs__body tabs__body-active">
+										<p class="contest-tabs__text">
+											Телескоп Levenhuk Skyline Travel 80 – небольшой и легкий рефрактор с
+											просветленной оптикой. Прост в управлении.
+											А качество передаваемой картинки порадует всех без исключения. Телескоп
+											ориентирован на лунные
+											и планетарные наблюдения, подходит для изучения
+										</p>
+										<p class="contest-tabs__more-text">
+											наземных ландшафтов. Из
+											объектов дальнего космоса в него удастся рассмотреть самые яркие из них –
+											отдельные туманности, галактики и звездные скопления!
+										</p>
+										<button type="button"
+											class="contest-tabs__more"><span>Развернуть</span><span>Свернуть</span></button>
+									</div>
+									<div id="contest-tabs-2" class="contest-tabs__body">
+										<p class="contest-tabs__text">
+											Яндекс Станция 2 с Алисой. Лаконичный дизайн станции сочетается с широкими
+											возможностями для развлечений и управления другими устройствами. Алиса
+											мгновенно реагирует на голосовые команды.
+											В корпус Станции встроена акустическая система мощностью 30 Вт.
+										</p>
+										<p class="contest-tabs__more-text">
+											Она порадует
+											музыкой с ярко выраженными высокими нотами и глубокими басами.
+
+											Модель поддерживает Wi-Fi и Bluetooth.
+										</p>
+										<button type="button"
+											class="contest-tabs__more"><span>Развернуть</span><span>Свернуть</span></button>
+									</div>
+									<div id="contest-tabs-3" class="contest-tabs__body">
+										<p>
+											Эксклюзивный набор фирменных подарков Газпромбанк Автолозинг: худи, рюкзак,
+											футболка и фирменная кружка.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contest-main__image">
+							<img data-popup="#description1" class="tabs__body-active" id="contest-tabs-1" src="img/telescope.png" alt="телескоп">
+							<img data-popup="#description2" id="contest-tabs-2" src="img/yandex-station.png" alt="яндекс станция">
+							<img data-popup="#description3" id="contest-tabs-3" src="img/contest-main-3.png" alt="рюкзак">
+						</div>
+					</div>
+				</div>
+				<div class="contest-main__lines">
+					<img src="img/lines.svg" alt="">
+				</div>
+			</section>
+			<section class="contest-registration">
+				<div class="contest-registration__container">
+					<div class="contest-registration__body">
+						<div class="contest-registration__content">
+							<h2 class="contest-registration__title">зарегистрируйся <br>
+								через форму ниже</h2>
+							<form action="#" class="contest-registration__form">
+								<input type="text" class="contest-registration__input" placeholder="ФИО">
+								<input type="text" class="contest-registration__input" placeholder="VK">
+								<input type="text" class="contest-registration__input" placeholder="TELEGRAM">
+								<input type="text" class="contest-registration__input" placeholder="YOUTUBE">
+							</form>
+						</div>
+						<div class="contest-registration__media">
+							<div class="contest-registration__image">
+								<img src="img/yandex-station.png" alt="яндекс станция">
+							</div>
+							<div class="contest-registration__image">
+								<img src="img/contest-main-3.png" alt="рюкзак">
+							</div>
+							<div class="contest-registration__image">
+								<img src="img/telescope.png" alt="телескоп">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contest-registration__lines">
+					<img src="img/lines.svg" alt="">
+					<img src="img/line1.svg" alt="">
+				</div>
+			</section>
+			<section class="contest-faq">
+				<div class="contest-faq__container">
+					<h2 class="contest-faq__title">Что нужно сделать?</h2>
+					<div data-spollers data-one-spoller class="contest-spollers">
+						<div class="contest-faq__lines">
+							<img src="img/line1.svg" alt="">
+						</div>
+						<div class="contest-spollers__item">
+							<button type="button" data-spoller class="contest-spollers__title">Зарегистрируйся</button>
+							<div class="contest-spollers__body">Через форму выше: заполни свое ФИО, укажи ссылки на свои социальные сети. Обязательно укажи ссылку на свою страницу VK</div>
+						</div>
+						<div class="contest-spollers__item">
+							<button type="button" data-spoller class="contest-spollers__title">подпишись</button>
+							<div class="contest-spollers__body">Подпишись на нашу группу в VK: <a href="https://vk.com/autogpbl">https://vk.com/autogpbl</a></div>
+						</div>
+						<div class="contest-spollers__item">
+							<button type="button" data-spoller class="contest-spollers__title">сроки проведения</button>
+							<div class="contest-spollers__body">
+								Проявляй активность в нашей группе VK с 13 ноября по 7 декабря. Чем больше твоя активность, тем выше баллов ты сможешь заработать. Активность засчитывается только в публикациях, сделанных с 13 ноября по 7 декабря включительно
+							</div>
+						</div>
+						<div class="contest-spollers__item">
+							<button type="button" data-spoller class="contest-spollers__title">система баллов</button>
+							<div class="contest-spollers__body">Каждая активность на наши публикации может тебе принести: лайк – 1 балл, комментарий – 2 балла, репост – 3 балла. Весь подсчет активности будет осуществляться специальным приложением «Рейтинг» <a href="https://vk.com/app.coliseum">(https://vk.com/app.coliseum)</a></div>
+						</div>
+						<div class="contest-spollers__item">
+							<button type="button" data-spoller class="contest-spollers__title">ограничения</button>
+							<div class="contest-spollers__body">Максимальная активность на каждую публикацию ограничена. Это значит, что на каждую публикацию от одного участника учитывается только 1 лайк, 1 репост, 2 комментария</div>
+						</div>
+						<div class="contest-spollers__item">
+							<button type="button" data-spoller class="contest-spollers__title">оставляй комментарии</button>
+							<div class="contest-spollers__body">В контексте поста. Пиши развернутый комментарий в 4-5 слов. Однотипные комментарии по типу «вау, супер, классно», а также комментарии, состоящие из эмодзи – будут удаляться фильтром и вручную.</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<section class="contest-results">
+				<div class="contest-results__container">
+					<h2 class="contest-results__title">Подведение итогов</h2>
+					<ul class="contest-results__list">
+						<li class="contest-results__item">Первые три участника, набравшие наибольшее количество баллов по завершению срока конкурса – получат призы.</li>
+						<li class="contest-results__item"><b>За проявление активности</b> в других наших социальных сетях мы выдадим дополнительные баллы участникам.</li>
+						<li class="contest-results__item">Самый активный участник по комментариям в нашем Telegram <b>дополнительно получит +20 баллов к рейтингу.</b> Учитываются 2 комментария на 1 публикацию. Активность засчитывается только в публикациях, сделанных с 13 ноября по 7 декабря включительно.</li>
+						<li class="contest-results__item">Самый активный участник по комментариям в нашем YouTube <b>дополнительно получит +20 баллов к рейтингу.</b> Учитываются 2 комментария на 1 видео/Shorts. Активность засчитывается только в роликах, а также Shorts, сделанных с 13 ноября по 7 декабря включительно.</li>
+						<li class="contest-results__item">Обязательно оставляй комментарии <b>в контексте поста.</b></li>
+					</ul>
+					<div class="contest-results__text">Подведение итогов: <b>15 декабря.</b></div>
+						<a href="https://autogpbl.ru/" class="contest-results__link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="128" height="32" viewBox="0 0 128 32" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M33.2857 19.3429C34.5991 19.3429 35.6051 19.6563 36.3006 20.2862C36.9961 20.916 37.3453 21.8652 37.3453 23.1338V28.3606H35.3752V27.2741C35.1185 27.6651 34.7543 27.9606 34.2827 28.1666C33.8081 28.3725 33.238 28.477 32.5723 28.477C31.9067 28.477 31.3186 28.3636 30.8201 28.1337C30.3186 27.9069 29.9336 27.5875 29.6589 27.1815C29.3873 26.7756 29.25 26.3159 29.25 25.8024C29.25 24.9995 29.5485 24.3577 30.1425 23.8741C30.7395 23.3906 31.6768 23.1488 32.9574 23.1488H35.2618V23.0144C35.2618 22.3906 35.0767 21.913 34.7036 21.5787C34.3305 21.2443 33.7783 21.0772 33.041 21.0772C32.5395 21.0772 32.0469 21.1548 31.5634 21.31C31.0798 21.4652 30.6709 21.6831 30.3365 21.9607L29.5187 20.4414C29.9873 20.0862 30.5485 19.8115 31.2052 19.6235C31.8619 19.4354 32.5574 19.3399 33.2917 19.3399L33.2857 19.3429ZM33.0022 26.9576C33.5245 26.9576 33.9902 26.8382 34.3962 26.5994C34.8021 26.3606 35.0887 26.0174 35.2558 25.5726V24.5368H33.1007C31.8977 24.5368 31.2977 24.9308 31.2977 25.7218C31.2977 26.1009 31.447 26.4024 31.7485 26.6233C32.0499 26.8472 32.4678 26.9576 33.0022 26.9576ZM48.6525 19.4414V28.3606H46.6645V27.2263C46.3302 27.6263 45.9123 27.9367 45.4108 28.1546C44.9093 28.3725 44.3691 28.48 43.79 28.48C42.5989 28.48 41.6617 28.1487 40.9751 27.486C40.2915 26.8233 39.9483 25.8412 39.9483 24.5368V19.4414H42.0348V24.2502C42.0348 25.0532 42.2169 25.6502 42.578 26.0442C42.9392 26.4383 43.4556 26.6382 44.1243 26.6382C44.8705 26.6382 45.4645 26.4084 45.9033 25.9457C46.3421 25.483 46.563 24.8174 46.563 23.9488V19.4384H48.6495L48.6525 19.4414ZM56.7538 27.877C56.5091 28.077 56.2106 28.2263 55.8613 28.3278C55.5121 28.4292 55.1389 28.477 54.7509 28.477C53.7718 28.477 53.0136 28.2203 52.4793 27.7099C51.945 27.1964 51.6763 26.4532 51.6763 25.4711V21.1787H50.2077V19.5101H51.6763V17.4713H53.7629V19.5101H56.1509V21.1787H53.7629V25.4204C53.7629 25.8532 53.8673 26.1845 54.0793 26.4144C54.2912 26.6412 54.5957 26.7576 54.9987 26.7576C55.4673 26.7576 55.8554 26.6353 56.1688 26.3905L56.7538 27.877ZM62.1806 28.477C61.2791 28.477 60.4672 28.283 59.7418 27.8919C59.0195 27.5009 58.4523 26.9606 58.0463 26.2621C57.6404 25.5666 57.4374 24.7786 57.4374 23.898C57.4374 23.0174 57.6404 22.2324 58.0463 21.5428C58.4523 20.8533 59.0165 20.313 59.7418 19.922C60.4642 19.5309 61.2791 19.3369 62.1806 19.3369C63.082 19.3369 63.9119 19.5309 64.6343 19.922C65.3566 20.313 65.9238 20.8503 66.3297 21.5428C66.7357 22.2324 66.9387 23.0174 66.9387 23.898C66.9387 24.7786 66.7357 25.5666 66.3297 26.2621C65.9238 26.9576 65.3596 27.5009 64.6343 27.8919C63.9119 28.283 63.091 28.477 62.1806 28.477ZM62.1806 26.689C62.9477 26.689 63.5835 26.4323 64.085 25.9218C64.5865 25.4084 64.8372 24.7368 64.8372 23.901C64.8372 23.0652 64.5865 22.3936 64.085 21.8801C63.5835 21.3667 62.9507 21.113 62.1806 21.113C61.4104 21.113 60.7806 21.3697 60.2851 21.8801C59.7896 22.3936 59.5418 23.0652 59.5418 23.901C59.5418 24.7368 59.7896 25.4084 60.2851 25.9218C60.7806 26.4353 61.4134 26.689 62.1806 26.689ZM77.7951 19.4414V27.0084C77.7951 30.1486 76.1922 31.7187 72.9863 31.7187C72.1296 31.7187 71.3177 31.6113 70.5475 31.3934C69.7804 31.1755 69.1446 30.862 68.6431 30.4501L69.5774 28.88C69.9685 29.2024 70.461 29.4621 71.055 29.6561C71.652 29.8501 72.255 29.9486 72.8669 29.9486C73.846 29.9486 74.5654 29.7247 75.0221 29.28C75.4788 28.8352 75.7056 28.1546 75.7056 27.2412V26.7726C75.3504 27.1636 74.9146 27.4561 74.4042 27.6591C73.8907 27.8591 73.3296 27.9606 72.7176 27.9606C71.8729 27.9606 71.1057 27.7785 70.4222 27.4173C69.7386 27.0561 69.1983 26.5457 68.8013 25.889C68.4073 25.2323 68.2073 24.4801 68.2073 23.6353C68.2073 22.7906 68.4043 22.0413 68.8013 21.3876C69.1953 20.7369 69.7356 20.2324 70.4222 19.8772C71.1057 19.522 71.8729 19.3429 72.7176 19.3429C73.3624 19.3429 73.9504 19.4474 74.4788 19.6593C75.0071 19.8712 75.4489 20.1936 75.8071 20.6294V19.4444H77.7951V19.4414ZM73.0341 26.1875C73.8251 26.1875 74.4728 25.9517 74.9803 25.4771C75.4877 25.0025 75.7415 24.3876 75.7415 23.6323C75.7415 22.8771 75.4877 22.2801 74.9803 21.8115C74.4728 21.3428 73.8251 21.11 73.0341 21.11C72.243 21.11 71.5774 21.3428 71.0729 21.8115C70.5655 22.2801 70.3117 22.8861 70.3117 23.6323C70.3117 24.3786 70.5655 25.0054 71.0729 25.4771C71.5804 25.9517 72.2341 26.1875 73.0341 26.1875ZM85.4756 19.3399C86.3442 19.3399 87.1203 19.528 87.8069 19.9071C88.4904 20.2862 89.0277 20.8205 89.4188 21.51C89.8098 22.1995 90.0038 22.9965 90.0038 23.898C90.0038 24.7995 89.8098 25.5995 89.4188 26.295C89.0277 26.9905 88.4904 27.5278 87.8069 27.9069C87.1233 28.286 86.3442 28.474 85.4756 28.474C84.2726 28.474 83.3204 28.074 82.6189 27.2711V31.5963H80.5324V19.4384H82.5204V20.6085C82.8667 20.1847 83.2905 19.8683 83.798 19.6563C84.3054 19.4444 84.8636 19.3399 85.4756 19.3399ZM85.2427 26.689C86.0099 26.689 86.6427 26.4323 87.1382 25.9218C87.6337 25.4084 87.8815 24.7368 87.8815 23.901C87.8815 23.0652 87.6337 22.3936 87.1382 21.8801C86.6427 21.3667 86.0099 21.113 85.2427 21.113C84.7412 21.113 84.2905 21.2264 83.8905 21.4563C83.4905 21.6831 83.1711 22.0115 82.9383 22.4324C82.7055 22.8562 82.5891 23.3458 82.5891 23.901C82.5891 24.4562 82.7055 24.9487 82.9383 25.3696C83.1711 25.7935 83.4905 26.1189 83.8905 26.3457C84.2905 26.5726 84.7412 26.689 85.2427 26.689ZM96.935 19.3399C97.8036 19.3399 98.5797 19.528 99.2663 19.9071C99.9498 20.2862 100.487 20.8205 100.878 21.51C101.269 22.1995 101.463 22.9965 101.463 23.898C101.463 24.7995 101.269 25.5995 100.878 26.295C100.487 26.9905 99.9498 27.5278 99.2663 27.9069C98.5827 28.286 97.8036 28.474 96.935 28.474C96.3231 28.474 95.7619 28.3695 95.2574 28.1576C94.75 27.9457 94.3261 27.6293 93.9798 27.2054V28.3576H91.9918V15.9639H94.0783V20.522C94.4336 20.1309 94.8544 19.8384 95.338 19.6354C95.8216 19.4354 96.3529 19.3339 96.932 19.3339L96.935 19.3399ZM96.7022 26.689C97.4693 26.689 98.1021 26.4323 98.5976 25.9218C99.0931 25.4084 99.3409 24.7368 99.3409 23.901C99.3409 23.0652 99.0931 22.3936 98.5976 21.8801C98.1021 21.3667 97.4693 21.113 96.7022 21.113C96.2007 21.113 95.7499 21.2264 95.35 21.4563C94.95 21.6831 94.6306 22.0115 94.3977 22.4324C94.1649 22.8562 94.0485 23.3458 94.0485 23.901C94.0485 24.4562 94.1649 24.9487 94.3977 25.3696C94.6306 25.7935 94.95 26.1189 95.35 26.3457C95.7499 26.5726 96.2007 26.689 96.7022 26.689ZM103.448 15.9669H105.535V28.3606H103.448V15.9669ZM108.944 28.477C108.565 28.477 108.242 28.3457 107.974 28.083C107.705 27.8203 107.574 27.489 107.574 27.089C107.574 26.689 107.705 26.3427 107.965 26.086C108.227 25.8293 108.553 25.701 108.941 25.701C109.329 25.701 109.657 25.8293 109.917 26.086C110.179 26.3427 110.308 26.6771 110.308 27.089C110.308 27.5009 110.173 27.8203 109.908 28.083C109.639 28.3457 109.317 28.477 108.938 28.477H108.944ZM114.338 20.7429C114.938 19.8086 115.997 19.3399 117.511 19.3399V21.3279C117.332 21.2951 117.17 21.2772 117.027 21.2772C116.215 21.2772 115.579 21.513 115.123 21.9876C114.666 22.4622 114.439 23.1428 114.439 24.0323V28.3576H112.353V19.4384H114.341V20.7399L114.338 20.7429ZM128 19.4414V28.3606H126.012V27.2263C125.678 27.6263 125.26 27.9367 124.758 28.1546C124.257 28.3725 123.716 28.48 123.137 28.48C121.946 28.48 121.009 28.1487 120.323 27.486C119.639 26.8233 119.296 25.8412 119.296 24.5368V19.4414H121.382V24.2502C121.382 25.0532 121.564 25.6502 121.925 26.0442C122.287 26.4383 122.803 26.6382 123.472 26.6382C124.218 26.6382 124.812 26.4084 125.251 25.9457C125.69 25.483 125.91 24.8174 125.91 23.9488V19.4384H127.997L128 19.4414Z" fill="white"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M34.623 12.9609C37.1961 12.9609 39.4796 11.4863 40.599 8.97293L44.5929 0H24.856C21.9725 0.0388051 19.8741 1.6716 18.8592 3.98797L14.8652 12.9609H34.623Z" fill="#FF7900"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M9.88037 19.4385C11.1669 19.4385 12.3102 18.7012 12.8684 17.4445L14.8653 12.958H4.9969C3.55514 12.9759 2.5074 13.7938 1.99697 14.952L0 19.4385H9.88037Z" fill="#FF7900"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.489 22.6801C16.1338 22.6801 16.7039 22.31 16.9815 21.6831L17.9815 19.4414H13.0473C12.3279 19.4504 11.8025 19.8593 11.5488 20.4384L10.5488 22.6801H15.489Z" fill="#FF7900"/>
+							  </svg>
+						</a>
+				</div>
+				<div class="contest-results__lines">
+					<img src="img/line1.svg" alt="">
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+	<div id="description1" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button type="button" data-close class="popup__close"></button>
+			<div class="popup__text">
+				Телескоп Levenhuk Skyline Travel 80 – небольшой и легкий рефрактор с просветленной оптикой. Прост в
+				управлении.
+				А качество передаваемой картинки порадует всех без исключения. Телескоп ориентирован на лунные
+				и планетарные наблюдения, подходит для изучения наземных ландшафтов. Из объектов дальнего космоса в него
+				удастся рассмотреть самые яркие из них – отдельные туманности, галактики и звездные скопления!
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="description2" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button type="button" data-close class="popup__close"></button>
+			<div class="popup__text">
+				<p>Яндекс Станция 2 с Алисой. Лаконичный дизайн станции сочетается с широкими возможностями для
+					развлечений и управления другими устройствами. Алиса мгновенно реагирует на голосовые команды.</p>
+
+				<p>В корпус Станции встроена акустическая система мощностью 30 Вт. Она порадует музыкой с ярко
+					выраженными высокими нотами и глубокими басами. </p>
+
+				<p>Модель поддерживает Wi-Fi и Bluetooth.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="description3" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button type="button" data-close class="popup__close"></button>
+			<div class="popup__text">
+				Эксклюзивный набор фирменных подарков Газпромбанк Автолозинг: худи, рюкзак, футболка и фирменная кружка.
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<script src="js/app.js?_v=20231110122505"></script>
+</body>
+
+</html>
